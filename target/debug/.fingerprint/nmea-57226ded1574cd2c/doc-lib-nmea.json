@@ -1,0 +1,1 @@
+{"rustc":10772311102024838230,"target":498402894365951104,"profile":8321053380468705890,"local":{"variant":"Precalculated","fields":["1463391104.385949339s (/home/flx/misc/rust/nmea/Cargo.toml)"]},"features":"None","deps":[["chrono v0.2.22",6975062500324958133],["lazy_static v0.1.16",10556036092746820197],["regex v0.1.69",9789613808760072643]],"rustflags":[]}

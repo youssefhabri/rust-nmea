@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["FixType","Fix type"],["SentenceType","NMEA sentence type"]],"struct":[["Nmea","NMEA parser"],["Satellite","Satellite in view representation"]]});
