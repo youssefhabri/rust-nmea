@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,45 +44,69 @@
 
     <section id='main' class="content mod">
 <h1 class='fqn'><span class='in-band'>Crate <a class='mod' href=''>nmea</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-0' class='srclink' href='../src/nmea/src/lib.rs.html#16-516' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-0' class='srclink' href='../src/nmea/src/lib.rs.html#16-966' title='goto source code'>[src]</a></span></h1>
 <h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Nmea.html'
-                               title='nmea::Nmea'>Nmea</a></td>
-                        <td class='docblock short'>
-                             <p>NMEA parser</p>
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.Satellite.html'
-                               title='nmea::Satellite'>Satellite</a></td>
-                        <td class='docblock short'>
-                             <p>Satellite in view representation</p>
-                        </td>
-                    </tr>
-                </table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Nmea.html'
+                                  title='nmea::Nmea'>Nmea</a></td>
+                           <td class='docblock short'>
+                                <p>! NMEA parser</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='struct' href='struct.Satellite.html'
+                                  title='nmea::Satellite'>Satellite</a></td>
+                           <td class='docblock short'>
+                                <p>A Satellite</p>
+                           </td>
+                       </tr></table><h2 id='enums' class='section-header'><a href="#enums">Enums</a></h2>
 <table>
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.FixType.html'
-                               title='nmea::FixType'>FixType</a></td>
-                        <td class='docblock short'>
-                             <p>Fix type</p>
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='enum' href='enum.SentenceType.html'
-                               title='nmea::SentenceType'>SentenceType</a></td>
-                        <td class='docblock short'>
-                             <p>NMEA sentence type</p>
-                        </td>
-                    </tr>
-                </table></section>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.FixType.html'
+                                  title='nmea::FixType'>FixType</a></td>
+                           <td class='docblock short'>
+                                <p>Fix type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.GnssType.html'
+                                  title='nmea::GnssType'>GnssType</a></td>
+                           <td class='docblock short'>
+                                <p>GNSS type</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class='enum' href='enum.SentenceType.html'
+                                  title='nmea::SentenceType'>SentenceType</a></td>
+                           <td class='docblock short'>
+                                <p>NMEA sentence type
+General: OSD | 
+Autopilot: APA | APB | ASD | 
+Decca: DCN | 
+D-GPS: MSK 
+Echo: DBK | DBS | DBT | 
+Radio: FSI | SFI | TLL 
+Speed: VBW | VHW | VLW | 
+GPS: ALM | GBS | GGA | GNS | GSA | GSV | 
+Course: DPT | HDG | HDM | HDT | HSC | ROT | VDR | 
+Loran-C: GLC | LCD | 
+Machine: RPM | 
+Navigation: RMA | RMB | RMC | 
+Omega: OLN | 
+Position: GLL | DTM 
+Radar: RSD | TLL | TTM | 
+Rudder: RSA | 
+Temperature: MTW | 
+Transit: GXA | RTF | 
+Waypoints and tacks: AAM | BEC | BOD | BWC | BWR | BWW | ROO | RTE | VTG | WCV | WNC | WPL | XDR | XTE | XTR | 
+Wind: MWV | VPW | VWR | 
+Date and Time: GDT | ZDA | ZFO | ZTG |</p>
+                           </td>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>

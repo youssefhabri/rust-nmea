@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="../rustdoc.css">
     <link rel="stylesheet" type="text/css" href="../main.css">
+    
 
     
     
@@ -43,20 +44,139 @@
 
     <section id='main' class="content enum">
 <h1 class='fqn'><span class='in-band'>Enum <a href='index.html'>nmea</a>::<wbr><a class='enum' href=''>SentenceType</a></span><span class='out-of-band'><span id='render-detail'>
-            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
-                [<span class='inner'>&#x2212;</span>]
-            </a>
-        </span><a id='src-207' class='srclink' href='../src/nmea/src/lib.rs.html#331-336' title='goto source code'>[src]</a></span></h1>
+                   <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                       [<span class='inner'>&#x2212;</span>]
+                   </a>
+               </span><a id='src-207' class='srclink' href='../src/nmea/src/lib.rs.html#462-564' title='goto source code'>[src]</a></span></h1>
 <pre class='rust enum'>pub enum SentenceType {
     None,
+    AAM,
+    ABK,
+    ACA,
+    ACK,
+    ACS,
+    AIR,
+    ALM,
+    ALR,
+    APA,
+    APB,
+    ASD,
+    BEC,
+    BOD,
+    BWC,
+    BWR,
+    BWW,
+    CUR,
+    DBK,
+    DBS,
+    DBT,
+    DCN,
+    DPT,
+    DSC,
+    DSE,
+    DSI,
+    DSR,
+    DTM,
+    FSI,
+    GBS,
     GGA,
+    GLC,
+    GLL,
+    GMP,
+    GNS,
+    GRS,
+    GSA,
+    GST,
     GSV,
-}</pre><div class='docblock'><p>NMEA sentence type</p>
+    GTD,
+    GXA,
+    HDG,
+    HDM,
+    HDT,
+    HMR,
+    HMS,
+    HSC,
+    HTC,
+    HTD,
+    LCD,
+    LRF,
+    LRI,
+    LR1,
+    LR2,
+    LR3,
+    MLA,
+    MSK,
+    MSS,
+    MWD,
+    MTW,
+    MWV,
+    OLN,
+    OSD,
+    ROO,
+    RMA,
+    RMB,
+    RMC,
+    ROT,
+    RPM,
+    RSA,
+    RSD,
+    RTE,
+    SFI,
+    SSD,
+    STN,
+    TLB,
+    TLL,
+    TRF,
+    TTM,
+    TUT,
+    TXT,
+    VBW,
+    VDM,
+    VDO,
+    VDR,
+    VHW,
+    VLW,
+    VPW,
+    VSD,
+    VTG,
+    VWR,
+    WCV,
+    WNC,
+    WPL,
+    XDR,
+    XTE,
+    XTR,
+    ZDA,
+    ZDL,
+    ZFO,
+    ZTG,
+}</pre><div class='docblock'><p>NMEA sentence type
+General: OSD | 
+Autopilot: APA | APB | ASD | 
+Decca: DCN | 
+D-GPS: MSK 
+Echo: DBK | DBS | DBT | 
+Radio: FSI | SFI | TLL 
+Speed: VBW | VHW | VLW | 
+GPS: ALM | GBS | GGA | GNS | GSA | GSV | 
+Course: DPT | HDG | HDM | HDT | HSC | ROT | VDR | 
+Loran-C: GLC | LCD | 
+Machine: RPM | 
+Navigation: RMA | RMB | RMC | 
+Omega: OLN | 
+Position: GLL | DTM 
+Radar: RSD | TLL | TTM | 
+Rudder: RSA | 
+Temperature: MTW | 
+Transit: GXA | RTF | 
+Waypoints and tacks: AAM | BEC | BOD | BWC | BWR | BWW | ROO | RTE | VTG | WCV | WNC | WPL | XDR | XTE | XTR | 
+Wind: MWV | VPW | VWR | 
+Date and Time: GDT | ZDA | ZFO | ZTG |</p>
 </div><h2 class='variants'>Variants</h2>
-<table class='variants_table'><tr><td id='variant.None'><code>None</code></td><td></td><td></td></tr><tr><td id='variant.GGA'><code>GGA</code></td><td></td><td></td></tr><tr><td id='variant.GSV'><code>GSV</code></td><td></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;&amp;'a <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt; for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#method.from' class='fnname'>from</a>(s: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; Self</code></h4>
-</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#method.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
-</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
-<h4 id='method.ne' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<table class='variants_table'><tr><td id='variant.None'><code>None</code></td><td></td><td></td></tr><tr><td id='variant.AAM'><code>AAM</code></td><td></td><td></td></tr><tr><td id='variant.ABK'><code>ABK</code></td><td></td><td></td></tr><tr><td id='variant.ACA'><code>ACA</code></td><td></td><td></td></tr><tr><td id='variant.ACK'><code>ACK</code></td><td></td><td></td></tr><tr><td id='variant.ACS'><code>ACS</code></td><td></td><td></td></tr><tr><td id='variant.AIR'><code>AIR</code></td><td></td><td></td></tr><tr><td id='variant.ALM'><code>ALM</code></td><td></td><td></td></tr><tr><td id='variant.ALR'><code>ALR</code></td><td></td><td></td></tr><tr><td id='variant.APA'><code>APA</code></td><td></td><td></td></tr><tr><td id='variant.APB'><code>APB</code></td><td></td><td></td></tr><tr><td id='variant.ASD'><code>ASD</code></td><td></td><td></td></tr><tr><td id='variant.BEC'><code>BEC</code></td><td></td><td></td></tr><tr><td id='variant.BOD'><code>BOD</code></td><td></td><td></td></tr><tr><td id='variant.BWC'><code>BWC</code></td><td></td><td></td></tr><tr><td id='variant.BWR'><code>BWR</code></td><td></td><td></td></tr><tr><td id='variant.BWW'><code>BWW</code></td><td></td><td></td></tr><tr><td id='variant.CUR'><code>CUR</code></td><td></td><td></td></tr><tr><td id='variant.DBK'><code>DBK</code></td><td></td><td></td></tr><tr><td id='variant.DBS'><code>DBS</code></td><td></td><td></td></tr><tr><td id='variant.DBT'><code>DBT</code></td><td></td><td></td></tr><tr><td id='variant.DCN'><code>DCN</code></td><td></td><td></td></tr><tr><td id='variant.DPT'><code>DPT</code></td><td></td><td></td></tr><tr><td id='variant.DSC'><code>DSC</code></td><td></td><td></td></tr><tr><td id='variant.DSE'><code>DSE</code></td><td></td><td></td></tr><tr><td id='variant.DSI'><code>DSI</code></td><td></td><td></td></tr><tr><td id='variant.DSR'><code>DSR</code></td><td></td><td></td></tr><tr><td id='variant.DTM'><code>DTM</code></td><td></td><td></td></tr><tr><td id='variant.FSI'><code>FSI</code></td><td></td><td></td></tr><tr><td id='variant.GBS'><code>GBS</code></td><td></td><td></td></tr><tr><td id='variant.GGA'><code>GGA</code></td><td></td><td></td></tr><tr><td id='variant.GLC'><code>GLC</code></td><td></td><td></td></tr><tr><td id='variant.GLL'><code>GLL</code></td><td></td><td></td></tr><tr><td id='variant.GMP'><code>GMP</code></td><td></td><td></td></tr><tr><td id='variant.GNS'><code>GNS</code></td><td></td><td></td></tr><tr><td id='variant.GRS'><code>GRS</code></td><td></td><td></td></tr><tr><td id='variant.GSA'><code>GSA</code></td><td></td><td></td></tr><tr><td id='variant.GST'><code>GST</code></td><td></td><td></td></tr><tr><td id='variant.GSV'><code>GSV</code></td><td></td><td></td></tr><tr><td id='variant.GTD'><code>GTD</code></td><td></td><td></td></tr><tr><td id='variant.GXA'><code>GXA</code></td><td></td><td></td></tr><tr><td id='variant.HDG'><code>HDG</code></td><td></td><td></td></tr><tr><td id='variant.HDM'><code>HDM</code></td><td></td><td></td></tr><tr><td id='variant.HDT'><code>HDT</code></td><td></td><td></td></tr><tr><td id='variant.HMR'><code>HMR</code></td><td></td><td></td></tr><tr><td id='variant.HMS'><code>HMS</code></td><td></td><td></td></tr><tr><td id='variant.HSC'><code>HSC</code></td><td></td><td></td></tr><tr><td id='variant.HTC'><code>HTC</code></td><td></td><td></td></tr><tr><td id='variant.HTD'><code>HTD</code></td><td></td><td></td></tr><tr><td id='variant.LCD'><code>LCD</code></td><td></td><td></td></tr><tr><td id='variant.LRF'><code>LRF</code></td><td></td><td></td></tr><tr><td id='variant.LRI'><code>LRI</code></td><td></td><td></td></tr><tr><td id='variant.LR1'><code>LR1</code></td><td></td><td></td></tr><tr><td id='variant.LR2'><code>LR2</code></td><td></td><td></td></tr><tr><td id='variant.LR3'><code>LR3</code></td><td></td><td></td></tr><tr><td id='variant.MLA'><code>MLA</code></td><td></td><td></td></tr><tr><td id='variant.MSK'><code>MSK</code></td><td></td><td></td></tr><tr><td id='variant.MSS'><code>MSS</code></td><td></td><td></td></tr><tr><td id='variant.MWD'><code>MWD</code></td><td></td><td></td></tr><tr><td id='variant.MTW'><code>MTW</code></td><td></td><td></td></tr><tr><td id='variant.MWV'><code>MWV</code></td><td></td><td></td></tr><tr><td id='variant.OLN'><code>OLN</code></td><td></td><td></td></tr><tr><td id='variant.OSD'><code>OSD</code></td><td></td><td></td></tr><tr><td id='variant.ROO'><code>ROO</code></td><td></td><td></td></tr><tr><td id='variant.RMA'><code>RMA</code></td><td></td><td></td></tr><tr><td id='variant.RMB'><code>RMB</code></td><td></td><td></td></tr><tr><td id='variant.RMC'><code>RMC</code></td><td></td><td></td></tr><tr><td id='variant.ROT'><code>ROT</code></td><td></td><td></td></tr><tr><td id='variant.RPM'><code>RPM</code></td><td></td><td></td></tr><tr><td id='variant.RSA'><code>RSA</code></td><td></td><td></td></tr><tr><td id='variant.RSD'><code>RSD</code></td><td></td><td></td></tr><tr><td id='variant.RTE'><code>RTE</code></td><td></td><td></td></tr><tr><td id='variant.SFI'><code>SFI</code></td><td></td><td></td></tr><tr><td id='variant.SSD'><code>SSD</code></td><td></td><td></td></tr><tr><td id='variant.STN'><code>STN</code></td><td></td><td></td></tr><tr><td id='variant.TLB'><code>TLB</code></td><td></td><td></td></tr><tr><td id='variant.TLL'><code>TLL</code></td><td></td><td></td></tr><tr><td id='variant.TRF'><code>TRF</code></td><td></td><td></td></tr><tr><td id='variant.TTM'><code>TTM</code></td><td></td><td></td></tr><tr><td id='variant.TUT'><code>TUT</code></td><td></td><td></td></tr><tr><td id='variant.TXT'><code>TXT</code></td><td></td><td></td></tr><tr><td id='variant.VBW'><code>VBW</code></td><td></td><td></td></tr><tr><td id='variant.VDM'><code>VDM</code></td><td></td><td></td></tr><tr><td id='variant.VDO'><code>VDO</code></td><td></td><td></td></tr><tr><td id='variant.VDR'><code>VDR</code></td><td></td><td></td></tr><tr><td id='variant.VHW'><code>VHW</code></td><td></td><td></td></tr><tr><td id='variant.VLW'><code>VLW</code></td><td></td><td></td></tr><tr><td id='variant.VPW'><code>VPW</code></td><td></td><td></td></tr><tr><td id='variant.VSD'><code>VSD</code></td><td></td><td></td></tr><tr><td id='variant.VTG'><code>VTG</code></td><td></td><td></td></tr><tr><td id='variant.VWR'><code>VWR</code></td><td></td><td></td></tr><tr><td id='variant.WCV'><code>WCV</code></td><td></td><td></td></tr><tr><td id='variant.WNC'><code>WNC</code></td><td></td><td></td></tr><tr><td id='variant.WPL'><code>WPL</code></td><td></td><td></td></tr><tr><td id='variant.XDR'><code>XDR</code></td><td></td><td></td></tr><tr><td id='variant.XTE'><code>XTE</code></td><td></td><td></td></tr><tr><td id='variant.XTR'><code>XTR</code></td><td></td><td></td></tr><tr><td id='variant.ZDA'><code>ZDA</code></td><td></td><td></td></tr><tr><td id='variant.ZDL'><code>ZDL</code></td><td></td><td></td></tr><tr><td id='variant.ZFO'><code>ZFO</code></td><td></td><td></td></tr><tr><td id='variant.ZTG'><code>ZTG</code></td><td></td><td></td></tr></table><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl&lt;'a&gt; <a class='trait' href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html' title='core::convert::From'>From</a>&lt;&amp;'a <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>&gt; for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.from' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/convert/trait.From.html#tymethod.from' class='fnname'>from</a>(s: &amp;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.str.html'>str</a>) -&gt; Self</code></h4>
+</div><h3 id='derived_implementations'>Derived Implementations </h3><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html' title='core::fmt::Debug'>Debug</a> for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.fmt' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/fmt/trait.Debug.html#tymethod.fmt' class='fnname'>fmt</a>(&amp;self, __arg_0: &amp;mut <a class='struct' href='https://doc.rust-lang.org/nightly/core/fmt/struct.Formatter.html' title='core::fmt::Formatter'>Formatter</a>) -&gt; <a class='type' href='https://doc.rust-lang.org/nightly/core/fmt/type.Result.html' title='core::fmt::Result'>Result</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html' title='core::cmp::PartialEq'>PartialEq</a> for <a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a></code></h3><div class='impl-items'><h4 id='method.eq' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#tymethod.eq' class='fnname'>eq</a>(&amp;self, __arg_0: &amp;<a class='enum' href='../nmea/enum.SentenceType.html' title='nmea::SentenceType'>SentenceType</a>) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
+<h4 id='method.ne' class='method'><span class="since">1.0.0</span><code>fn <a href='https://doc.rust-lang.org/nightly/core/cmp/trait.PartialEq.html#method.ne' class='fnname'>ne</a>(&amp;self, other: &amp;Rhs) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a></code></h4>
 </div></section>
     <section id='search' class="content hidden"></section>
 
