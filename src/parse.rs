@@ -222,7 +222,8 @@ pub fn parse_gsv(sentence: &NmeaSentence) -> Result<GsvData, String> {
     }
     let gnss_type = match sentence.talker_id {
         b"GP" => GnssType::Gps,
-        b"GL" => GnssType::Glonass,
+        b"GA" => GnssType::Galileo,
+        b"GL" | b"GN" => GnssType::Glonass,
         _ => return Err("Unknown GNSS type in GSV sentence".into()),
     };
     //    println!("parse: '{}'", str::from_utf8(sentence.data).unwrap());

@@ -75,8 +75,8 @@ impl<'a> Nmea {
     pub fn new() -> Nmea {
         // TODO: This looks ugly.
         let mut n = Nmea::default();
-        n.satellites_scan.insert(GnssType::Galileo, vec![]);
-        n.satellites_scan.insert(GnssType::Gps, vec![]);
+//        n.satellites_scan.insert(GnssType::Galileo, vec![]);
+//        n.satellites_scan.insert(GnssType::Gps, vec![]);
         n.satellites_scan.insert(GnssType::Glonass, vec![]);
         n
     }
@@ -1075,5 +1075,4 @@ mod tests {
         assert_eq!(TestEnum::try_from(b"AAA").unwrap(), a);
         assert_eq!(TestEnum::try_from(b"BBB").unwrap(), b);
     }
-
 }
